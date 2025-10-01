@@ -1,0 +1,136 @@
+body {
+    background-color: #dfe8d6;
+    background-image: url("cathya.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+}
+
+.main {
+    background-color: rgba(253, 200, 92, 0.75);
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #ce8e2e0a;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px #88610cc2;
+}
+
+.section {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #a56a11;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px dashed #c5d1a6;
+    padding-bottom: 0.4rem;
+    text-align: left;
+}
+
+.drink-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.drink-column {
+    flex: 1;
+    min-width: 260px;
+}
+
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9fbe7;
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.items li:hover {
+    background-color: #dcedc8;
+    transform: translateY(-2px);
+}
+
+.items li span {
+    font-weight: bold;
+    color: #926910;
+}
+
+.item-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.hot li {
+    border-left: 4px solid #a05a2c;
+}
+
+.iced li {
+    border-left: 4px solid #4f9a94;
+}
+
+.iced-alt li {
+    border-left: 4px solid #708d23;
+}
+
+.pastries li {
+    border-left: 4px solid #bc8f8f;
+}
+
+@media (max-width: 768px) {
+    .drink-row {
+        flex-direction: column;
+    }
+
+    .main {
+        padding: 1.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .section {
+        font-size: 1.4rem;
+    }
+
+    .items li {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .item-img {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+    }
+}
